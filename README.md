@@ -3,3 +3,6 @@
 </div>
 
 A to-be CSS framework for znci projects.
+
+### Sass/SCSS Installation
+`npm install gulp gulp-sass sass --save-dev`
