@@ -4,5 +4,11 @@
 
 A to-be CSS framework for znci projects.
 
+# How to help
+
 ### Sass/SCSS Installation
 `npm install gulp gulp-sass sass --save-dev`
+
+# Use
+
+```<link rel="stylesheet" href="https://azalea.znci.dev/css/index.css">```

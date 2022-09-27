@@ -1,4 +1,5 @@
 $background: #16161a;
+$color: #fff;
 $headline: #fffffe;
 $paragraph: #94a1b2;
 $button: #7f5af0;
@@ -9,8 +10,52 @@ $headlight: $button;
 $secondary: #72757e;
 $tertiary: #2cb67d;
 $error: #d32752;
-$info: #f6c31c;
+$warning: #f0ad4e;
+$info: #5bc0de;
+$primary: #0275d8;
+
+$colors: (
+	"primary": $primary,
+	"background": $background,
+	"color": $color,
+	"headline": $headline,
+	"button": $button,
+	"buttontext": $buttontext,
+	"stroke": $stroke,
+	"main": $main,
+	"headlight": $headlight,
+	"secondary": $secondary,
+	"tertiary": $tertiary,
+	"error": $error,
+	"warning": $warning,
+	"info": $info,
+	"blue": #1919e6,
+	"red": #e61919,
+	"yellow": #e6e619,
+	"green": #19e635,
+	"orange": #ffa600,
+	"purple": #9900ff,
+	"gray": #808080,
+	"black": black,
+	"white": white,
+);
+
 $base-padding: 0.75rem;
-$base-margin: 0.75;
+$base-margin: 0.75rem;
+
 $base-border-thickness: 1px;
 $base-border-radius: 20px;
+
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+$base-font-size: 1rem;
+
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+// Components
+
+// Cards
+
+$card-max-width: 400px;
