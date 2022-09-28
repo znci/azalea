@@ -1,0 +1,24 @@
+@mixin input() {
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	border: 0;
+	padding: $base-padding $base-padding * 2;
+	border-radius: $base-border-radius;
+}
+
+.input {
+	@include input;
+}
+
+@each $key, $val in $colors {
+	.input-#{$key} {
+		@include input();
+		background-color: $val;
+	}
+	.input-outlined-#{$key} {
+		@include input();
+		border: $base-border-thickness solid $val;
+		background-color: #fff;
+	}
+}
