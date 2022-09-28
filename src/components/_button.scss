@@ -9,7 +9,6 @@
 
 .btn {
 	@include btn;
-
 }
 
 @each $key, $val in $colors {
