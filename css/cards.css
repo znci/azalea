@@ -8,15 +8,15 @@
 	max-width: 400px;
 	border-radius: 5px;
   }
-  .card .card-title {
+.card .card-title {
 	font-size: 1.5rem;
 	padding-bottom: 0.75rem;
 	font-weight: 500;
-  }
-  .card .card-content {
+}
+.card .card-content {
 	font-size: 1rem;
-  }
-  .card .card-content a {
+}
+.card .card-content a {
 	text-decoration: underline;
-  }
+}
   
