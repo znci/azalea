@@ -1213,6 +1213,7 @@ a {
 
 .tooltip {
   position: relative;
+  width: max-content;
 }
 
 @keyframes slidein {
@@ -1221,7 +1222,6 @@ a {
   }
   to {
     opacity: 1;
-    background: var(--bg-gradient);
   }
 }
 .tooltip .ttp-text {
@@ -1236,7 +1236,7 @@ a {
   width: 250px;
   padding: 10px;
   border-radius: 10px;
-  background: var(--backgroundlight);
+  background: #2d2d31;
   z-index: 100;
   color: #fff;
   display: none;
@@ -1247,7 +1247,7 @@ a {
 }
 
 .tooltip:after {
-  content: "";
+  content: " ";
   animation: slidein 0.3s linear;
   position: absolute;
   /* position tooltip correctly */
@@ -1257,8 +1257,8 @@ a {
   top: 50%;
   transform: translateY(-50%);
   /* the arrow */
-  border: 10px solid var(--backgroundlight);
-  border-color: transparent var(--backgroundlight) transparent transparent;
+  border: 10px solid #2d2d31;
+  border-color: transparent #2d2d31 transparent transparent;
   z-index: 100;
   display: none;
 }
