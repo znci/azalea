@@ -1,0 +1,39 @@
+
+.alert {
+	position: relative;
+	width: 300px;
+	height: 50px;
+	display: flex;
+	margin: 10px;
+	align-items: center;
+	padding-left: 15px;
+	background-color: transparent;
+	border: 2px transparent solid; 
+	color: $color;
+	border-radius: 0.75rem;
+}
+
+@each $key, $val in $colors {
+	.alert.alert-#{$key} {
+		border-color: $val;
+		color: mix(black, $val, 20);
+		background-color: mix(white, $val, 50);
+	}
+	.alert.alert-#{$key}-fade {
+		border-color: $val;
+		color: mix(black, $val, 20);
+		background-color: mix(white, $val, 50);
+		animation: alertfade 5s linear;
+		animation-fill-mode: forwards;
+	}
+}
+@keyframes alertfade {
+	10%,20%,30%,40%,50%,60%,70%,80%{
+		visibility: inherit;
+		opacity: 1;
+	}
+	90%, 100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
