@@ -6,6 +6,19 @@ Add this stylesheet `<link>` into the `<head>` before all other links of your HT
 
 ```<link rel="stylesheet" href="https://azalea.znci.dev/css/index.css">```
 
+# Main Colors
+
+The main colors we use for azalea are as followed and subject to change.
+
+- Primary: `#0275d8` ![Primary](./assets/main_colors_primary.png)
+- Secondary: `#72757e` ![Secondary](./assets/main_colors_secondary.png)
+- Success: `#24913d` ![Success](./assets/main_colors_success.png)
+- Danger: `#ca0014` ![Danger](./assets/main_colors_danger.png)
+- Warning: `#e27611` ![Warning](./assets/main_colors_warning.png)
+- Info: `#1cacc5` ![Info](./assets/main_colors_info.png)
+- Light: `#a5a5a5` ![Light](./assets/main_colors_light.png)
+- Dark: `#414141` ![Dark](./assets/main_colors_dark.png)
+
 # Starting Template
 >  **Warning**
 >  This template is unfinished and will eventually contain all elements of azalea's functionality.
@@ -84,9 +97,77 @@ Add this stylesheet `<link>` into the `<head>` before all other links of your HT
 			Lorem ipsum dolor sit amet consectetur adipisicing <a href="#">elit</a>. Ad, eveniet. Quaerat, modi voluptatum harum vel esse eius, laboriosam dolorem quisquam corrupti dolores ab officia dolore.
 		</p>
 	</div>
+	<!-- Tooltips -->
+	<h2>Tooltips</h2>
+	<div class="tooltip">
+		Hover over me!
+		<div class="ttp-text">
+			Lorem, ipsum dolor.
+		</div>
+	</div>
 	<!-- Grid System -->
 
-	<!-- Utils -->
+	<!-- Alerts -->
+
+	<h2>Alerts</h2>
+	<div class="alert alert-primary">
+		This is a primary alert.
+	</div>
+	<div class="alert alert-secondary">
+		This is a secondary alert.
+	</div>
+	<div class="alert alert-success">
+		This is a success alert.
+	</div>
+	<div class="alert alert-danger">
+		This is a danger alert.
+	</div>
+	<div class="alert alert-warning">
+		This is a warning alert.
+	</div>
+	<div class="alert alert-info">
+		This is a info alert.
+	</div>
+	<div class="alert alert-light">
+		This is a light alert.
+	</div>
+	<div class="alert alert-dark">
+		This is a dark alert.
+	</div>
+	<div class="alert alert-primary-fade">
+		This is a fading primary alert.
+	</div>
+
+	<!-- Badges -->
+
+	<h2>Badges</h2>
+	<div class="badge badge-primary">Primary</div>
+	<div class="badge badge-secondary">Secondary</div>
+	<div class="badge badge-success">Success</div>
+	<div class="badge badge-danger">Danger</div>
+	<div class="badge badge-warning">Warning</div>
+	<div class="badge badge-info">Info</div>
+	<div class="badge badge-light">Light</div>
+	<div class="badge badge-dark">Dark</div>
+
+	<!-- Progress Bars -->
+
+	<h2>Progress Bars</h2>
+
+	<div class="progress">
+		<div class="progress-bar bg-red" style="width: 50%;"></div>
+	</div>
+
+	<h2>Main Colors</h2>
+
+	<div style="width: 48px; height: 48px;" class="bg-primary"></div>
+	<div style="width: 48px; height: 48px;" class="bg-secondary"></div>
+	<div style="width: 48px; height: 48px;" class="bg-success"></div>
+	<div style="width: 48px; height: 48px;" class="bg-danger"></div>
+	<div style="width: 48px; height: 48px;" class="bg-warning"></div>
+	<div style="width: 48px; height: 48px;" class="bg-info"></div>
+	<div style="width: 48px; height: 48px;" class="bg-light"></div>
+	<div style="width: 48px; height: 48px;" class="bg-dark"></div>
 </body>
 </html>
 ```
