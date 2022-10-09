@@ -10,7 +10,7 @@
 
 .input {
 	@include input;
-	background-color: #0d0d0d;
+	background-color: $background;
 	color: #fff;
 }
 .input:focus {

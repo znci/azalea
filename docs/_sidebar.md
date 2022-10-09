@@ -6,6 +6,8 @@
 	> [Buttons](/components/buttons)
 	> [Cards](/components/cards)
 	> [Tooltips](/components/tooltips)
+	> [Inputs](/components/inputs)
+	> [Progress Bars](/components/progress)
 
 * [Utilities](/utilities/text)
 	> [Text](/utilities/text)
