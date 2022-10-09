@@ -1873,6 +1873,166 @@ a {
     visibility: hidden;
   }
 }
+.badge {
+  position: relative;
+  display: inline-flex;
+  width: max-content;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 5px;
+  padding: 3px 10px 3px 10px;
+}
+
+.badge.badge-primary {
+  color: #025ead;
+  background-color: #81baec;
+}
+
+.badge.badge-background {
+  color: #121215;
+  background-color: #8b8b8d;
+}
+
+.badge.badge-color {
+  color: #cccccc;
+  background-color: white;
+}
+
+.badge.badge-headline {
+  color: #cccccb;
+  background-color: white;
+}
+
+.badge.badge-button {
+  color: #6648c0;
+  background-color: #bfadf8;
+}
+
+.badge.badge-buttontext {
+  color: #cccccb;
+  background-color: white;
+}
+
+.badge.badge-stroke {
+  color: #010101;
+  background-color: gray;
+}
+
+.badge.badge-main {
+  color: #cccccb;
+  background-color: white;
+}
+
+.badge.badge-headlight {
+  color: #6648c0;
+  background-color: #bfadf8;
+}
+
+.badge.badge-secondary {
+  color: #5b5e65;
+  background-color: #b9babf;
+}
+
+.badge.badge-tertiary {
+  color: #239264;
+  background-color: #96dbbe;
+}
+
+.badge.badge-blue {
+  color: #1414b8;
+  background-color: #8c8cf3;
+}
+
+.badge.badge-red {
+  color: #b81414;
+  background-color: #f38c8c;
+}
+
+.badge.badge-yellow {
+  color: #b8b814;
+  background-color: #f3f38c;
+}
+
+.badge.badge-green {
+  color: #14b82a;
+  background-color: #8cf39a;
+}
+
+.badge.badge-orange {
+  color: #cc8500;
+  background-color: #ffd380;
+}
+
+.badge.badge-purple {
+  color: #7a00cc;
+  background-color: #cc80ff;
+}
+
+.badge.badge-gray {
+  color: #666666;
+  background-color: silver;
+}
+
+.badge.badge-black {
+  color: black;
+  background-color: gray;
+}
+
+.badge.badge-white {
+  color: #cccccc;
+  background-color: white;
+}
+
+.badge.badge-success {
+  color: #1d7431;
+  background-color: #92c89e;
+}
+
+.badge.badge-danger {
+  color: #a20010;
+  background-color: #e5808a;
+}
+
+.badge.badge-error {
+  color: #a91f42;
+  background-color: #e993a9;
+}
+
+.badge.badge-warning {
+  color: #b55e0e;
+  background-color: #f1bb88;
+}
+
+.badge.badge-info {
+  color: #168a9e;
+  background-color: #8ed6e2;
+}
+
+.badge.badge-light {
+  color: #848484;
+  background-color: #d2d2d2;
+}
+
+.badge.badge-dark {
+  color: #343434;
+  background-color: #a0a0a0;
+}
+
+.progress {
+  background-color: #e9ecef;
+  width: 400px;
+  height: 16px;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 16px;
+  border-radius: 5px;
+}
+
 .text-primary {
   color: #0275d8;
 }
