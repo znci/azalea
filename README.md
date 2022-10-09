@@ -11,4 +11,6 @@ A to-be CSS framework for znci projects.
 
 # Use
 
-```<link rel="stylesheet" href="https://azalea.znci.dev/css/index.css">```
+```<link rel="stylesheet" href="https://azalea.znci.dev/css/index.css">```[^1]
+
+[^1]: you don't want to lol
