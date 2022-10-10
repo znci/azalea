@@ -1,17 +1,17 @@
-
 .badge {
-	position: relative;
-	display: inline-flex;
-	width: max-content;
-	align-items: center;
-	border-radius: 0.5rem;
-	margin: 5px;
-	padding: 3px 10px 3px 10px;
+    position: relative;
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin: 5px;
+    padding: 3px 10px 3px 10px;
 }
 
-@each $key, $val in $colors {
-	.badge.badge-#{$key} {
-		color: mix(black, $val, 20);
-		background-color: mix(white, $val, 50);
-	}
+@each $key,
+$val in $colors {
+    .badge.badge-#{$key} {
+        color: mix(black, $val, 20);
+        background-color: mix(white, $val, 50);
+    }
 }
