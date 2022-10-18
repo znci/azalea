@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Segoe UI";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {
@@ -752,617 +752,509 @@ a {
 
 .input {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #16161a;
-  color: #fff;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+.input-box {
+  position: relative;
+}
+.input-box .label {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  color: #777;
+  justify-content: center;
+  transition: all 0.05s linear;
+  font-size: 1rem;
+  transform: translate3d(0, -10px, 0);
+}
+.input-box input:focus + .label, .input-box input:not(:placeholder-shown) + .label {
+  transform: translate3d(-10px, -35px, 0) scale(0.75);
+  background-color: #fff;
+  padding: 0px 10px 0px 10px;
 }
 
 .input:focus {
   outline: none;
-  border: none;
 }
 
 .input-primary {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #0275d8;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #0275d8 solid;
 }
 
-.input-outlined-primary {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #0275d8;
-  background-color: #fff;
+.input-primary:focus {
+  border: 1px #0275d8 solid;
+}
+.input-primary:focus + .label {
+  color: #0275d8;
 }
 
 .input-background {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #16161a;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #16161a solid;
 }
 
-.input-outlined-background {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #16161a;
-  background-color: #fff;
+.input-background:focus {
+  border: 1px #16161a solid;
+}
+.input-background:focus + .label {
+  color: #16161a;
 }
 
 .input-color {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #fff;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #fff solid;
 }
 
-.input-outlined-color {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #fff;
-  background-color: #fff;
+.input-color:focus {
+  border: 1px #fff solid;
+}
+.input-color:focus + .label {
+  color: #fff;
 }
 
 .input-headline {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #fffffe;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #fffffe solid;
 }
 
-.input-outlined-headline {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #fffffe;
-  background-color: #fff;
+.input-headline:focus {
+  border: 1px #fffffe solid;
+}
+.input-headline:focus + .label {
+  color: #fffffe;
 }
 
 .input-button {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #7f5af0;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #7f5af0 solid;
 }
 
-.input-outlined-button {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #7f5af0;
-  background-color: #fff;
+.input-button:focus {
+  border: 1px #7f5af0 solid;
+}
+.input-button:focus + .label {
+  color: #7f5af0;
 }
 
 .input-buttontext {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #fffffe;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #fffffe solid;
 }
 
-.input-outlined-buttontext {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #fffffe;
-  background-color: #fff;
+.input-buttontext:focus {
+  border: 1px #fffffe solid;
+}
+.input-buttontext:focus + .label {
+  color: #fffffe;
 }
 
 .input-stroke {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #010101;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #010101 solid;
 }
 
-.input-outlined-stroke {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #010101;
-  background-color: #fff;
+.input-stroke:focus {
+  border: 1px #010101 solid;
+}
+.input-stroke:focus + .label {
+  color: #010101;
 }
 
 .input-main {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #fffffe;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #fffffe solid;
 }
 
-.input-outlined-main {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #fffffe;
-  background-color: #fff;
+.input-main:focus {
+  border: 1px #fffffe solid;
+}
+.input-main:focus + .label {
+  color: #fffffe;
 }
 
 .input-headlight {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #7f5af0;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #7f5af0 solid;
 }
 
-.input-outlined-headlight {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #7f5af0;
-  background-color: #fff;
+.input-headlight:focus {
+  border: 1px #7f5af0 solid;
+}
+.input-headlight:focus + .label {
+  color: #7f5af0;
 }
 
 .input-secondary {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #72757e;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #72757e solid;
 }
 
-.input-outlined-secondary {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #72757e;
-  background-color: #fff;
+.input-secondary:focus {
+  border: 1px #72757e solid;
+}
+.input-secondary:focus + .label {
+  color: #72757e;
 }
 
 .input-tertiary {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #2cb67d;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #2cb67d solid;
 }
 
-.input-outlined-tertiary {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #2cb67d;
-  background-color: #fff;
+.input-tertiary:focus {
+  border: 1px #2cb67d solid;
+}
+.input-tertiary:focus + .label {
+  color: #2cb67d;
 }
 
 .input-blue {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #1919e6;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #1919e6 solid;
 }
 
-.input-outlined-blue {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #1919e6;
-  background-color: #fff;
+.input-blue:focus {
+  border: 1px #1919e6 solid;
+}
+.input-blue:focus + .label {
+  color: #1919e6;
 }
 
 .input-red {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #e61919;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #e61919 solid;
 }
 
-.input-outlined-red {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #e61919;
-  background-color: #fff;
+.input-red:focus {
+  border: 1px #e61919 solid;
+}
+.input-red:focus + .label {
+  color: #e61919;
 }
 
 .input-yellow {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #e6e619;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #e6e619 solid;
 }
 
-.input-outlined-yellow {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #e6e619;
-  background-color: #fff;
+.input-yellow:focus {
+  border: 1px #e6e619 solid;
+}
+.input-yellow:focus + .label {
+  color: #e6e619;
 }
 
 .input-green {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #19e635;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #19e635 solid;
 }
 
-.input-outlined-green {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #19e635;
-  background-color: #fff;
+.input-green:focus {
+  border: 1px #19e635 solid;
+}
+.input-green:focus + .label {
+  color: #19e635;
 }
 
 .input-orange {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #ffa600;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #ffa600 solid;
 }
 
-.input-outlined-orange {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #ffa600;
-  background-color: #fff;
+.input-orange:focus {
+  border: 1px #ffa600 solid;
+}
+.input-orange:focus + .label {
+  color: #ffa600;
 }
 
 .input-purple {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #9900ff;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #9900ff solid;
 }
 
-.input-outlined-purple {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #9900ff;
-  background-color: #fff;
+.input-purple:focus {
+  border: 1px #9900ff solid;
+}
+.input-purple:focus + .label {
+  color: #9900ff;
 }
 
 .input-gray {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #808080;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #808080 solid;
 }
 
-.input-outlined-gray {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #808080;
-  background-color: #fff;
+.input-gray:focus {
+  border: 1px #808080 solid;
+}
+.input-gray:focus + .label {
+  color: #808080;
 }
 
 .input-black {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: black;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px black solid;
 }
 
-.input-outlined-black {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid black;
-  background-color: #fff;
+.input-black:focus {
+  border: 1px black solid;
+}
+.input-black:focus + .label {
+  color: black;
 }
 
 .input-white {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: white;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px white solid;
 }
 
-.input-outlined-white {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid white;
-  background-color: #fff;
+.input-white:focus {
+  border: 1px white solid;
+}
+.input-white:focus + .label {
+  color: white;
 }
 
 .input-success {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #24913d;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #24913d solid;
 }
 
-.input-outlined-success {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #24913d;
-  background-color: #fff;
+.input-success:focus {
+  border: 1px #24913d solid;
+}
+.input-success:focus + .label {
+  color: #24913d;
 }
 
 .input-danger {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #ca0014;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #ca0014 solid;
 }
 
-.input-outlined-danger {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #ca0014;
-  background-color: #fff;
+.input-danger:focus {
+  border: 1px #ca0014 solid;
+}
+.input-danger:focus + .label {
+  color: #ca0014;
 }
 
 .input-warning {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #e27611;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #e27611 solid;
 }
 
-.input-outlined-warning {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #e27611;
-  background-color: #fff;
+.input-warning:focus {
+  border: 1px #e27611 solid;
+}
+.input-warning:focus + .label {
+  color: #e27611;
 }
 
 .input-info {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #1cacc5;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #1cacc5 solid;
 }
 
-.input-outlined-info {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #1cacc5;
-  background-color: #fff;
+.input-info:focus {
+  border: 1px #1cacc5 solid;
+}
+.input-info:focus + .label {
+  color: #1cacc5;
 }
 
 .input-light {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #a5a5a5;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #a5a5a5 solid;
 }
 
-.input-outlined-light {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #a5a5a5;
-  background-color: #fff;
+.input-light:focus {
+  border: 1px #a5a5a5 solid;
+}
+.input-light:focus + .label {
+  color: #a5a5a5;
 }
 
 .input-dark {
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   border: 0;
   padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  background-color: #414141;
+  border-radius: 3px;
+  width: 250px;
+  position: relative;
+  border: 1px #414141 solid;
 }
 
-.input-outlined-dark {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  border-radius: 20px;
-  width: 200px;
-  border: 1px solid #414141;
-  background-color: #fff;
+.input-dark:focus {
+  border: 1px #414141 solid;
+}
+.input-dark:focus + .label {
+  color: #414141;
 }
 
 .tooltip {
@@ -1417,7 +1309,8 @@ a {
   display: none;
 }
 
-.tooltip:hover .ttp-text, .tooltip:hover:after {
+.tooltip:hover .ttp-text,
+.tooltip:hover:after {
   display: block;
 }
 

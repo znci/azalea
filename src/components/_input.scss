@@ -1,34 +1,57 @@
 @mixin input() {
     text-decoration: none;
-    cursor: pointer;
     display: inline-block;
     border: 0;
     padding: $base-padding $base-padding * 2;
-    border-radius: $base-border-radius;
-    width: 200px;
+    border-radius: 3px;
+    width: 250px;
+    position: relative;
 }
 
 .input {
     @include input;
-    background-color: $background;
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 0.9rem;
+    margin: 5px;
+}
+
+.input-box {
+    position: relative;
+    .label {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        color: #777;
+        justify-content: center;
+        transition: all 0.05s linear;
+        font-size: 1rem;
+        transform: translate3d(0,-10px,0);
+    }
+    input:focus + .label, input:not(:placeholder-shown) + .label {
+        transform: translate3d(-10px, -35px, 0) scale(0.75);
+        background-color: #fff;
+        padding: 0px 10px 0px 10px;
+    }
+
 }
 
 .input:focus {
     outline: none;
-    border: none;
 }
 
 @each $key,
 $val in $colors {
     .input-#{$key} {
         @include input();
-        background-color: $val;
+        border: 1px $val solid;
     }
-
-    .input-outlined-#{$key} {
-        @include input();
-        border: $base-border-thickness solid $val;
-        background-color: #fff;
+    .input-#{$key}:focus {
+        border: 1px $val solid;
+        + .label {
+            color: $val;
+        }
     }
 }
