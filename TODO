@@ -1,0 +1,135 @@
+Paddings
+Margins
+Navbars
+Sidebars
+Breadcrumbs
+Accordions
+Carousels
+Dropdowns
+Collapses
+List groups
+Modals
+Pagination
+Placeholders
+Progress
+Spinners
+Toasts
+Borders
+Display
+Floats
+Opacity
+Overflow x and y
+Position
+Shadows
+Sizing
+Spacing
+Vertical Align
+Visibility
+Radios and checks
+Aspect Ratio
+Containers
+Columns
+Break after, before and inside
+Box sizing
+Object fit and position
+Z index
+Space between
+Widths
+
+
+Typography
+___________
+
+font family
+font size
+smoothing
+style
+weight
+variant
+letter spacing
+line height
+list style type/position
+align
+color
+decoration
+deco color
+deco style
+deco thickness
+deco offset
+text transform
+overflow
+indent
+vertical align
+whitespace
+word break
+content
+
+Backgrounds
+_____________
+Background Attachment
+Background Clip
+BG Color
+BG Origin
+BG Position
+BG Repeat
+BG Size
+BG Image
+
+Borders
+____________
+
+Border Radius
+Border Width
+Border Color
+Border Style
+
+Details
+____________
+
+Box Shadow & Color
+Opacity
+
+Filters
+____________
+
+Blur
+Brightness
+Contrast
+Drop Shadow
+Grayscale
+Hue Rotate
+Invert
+Saturate
+Sepia
+Backdrop Blur, Brightness, Contrast, Grayscale, Hue Rotate, Invert, Opacity, 
+Saturate and Sepia
+
+Tables
+________
+Border Collapse, Space, Table Layout
+
+Transitions & Animation
+____________
+Transition Property, Duration, Timing Function, Delay, Animation
+
+Transforms
+_____________
+Scale
+Rotate
+Translate
+Skew
+Transform Origin
+
+Interactivity
+______________
+
+Accent Color
+Appearance
+Cursor
+Caret Color
+Pointer Events
+Resize
+Scroll Behaviour, Margin, Padding, Snap, Stop, Type
+Touch Action
+User Select
+Will change
