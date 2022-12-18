@@ -1,10 +1,12 @@
 # Introduction
+
 A quick introduction to azalea and how to use it.
 
 # How to use
+
 Add this stylesheet `<link>` into the `<head>` before all other links of your HTML document to load azalea.
 
-```<link rel="stylesheet" href="https://azalea.znci.dev/css/index.css">```
+`<link rel="stylesheet" href="https://azalea.znci.dev/css/index.css">`
 
 # Main Colors
 
@@ -23,5 +25,5 @@ The main colors we use for azalea are as followed and subject to change.
 
 We store a consistantly updated version of the template [here.](https://raw.githubusercontent.com/znci/azalea/main/template.html)
 
->  **Warning**
->  If you're contributing using this template, please download the whole repository before you edit the template. DO NOT include template edits in a different commit.
+> **Warning**
+> If you're contributing using this template, please download the whole repository before you edit the template. DO NOT include template edits in a different commit.

@@ -1,4 +1,3 @@
-
 # Text
 
 Texts have colors and background colors.

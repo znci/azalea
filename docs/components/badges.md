@@ -1,4 +1,3 @@
-
 # Badges
 
 Badges are ways to apply small stickers to a component.

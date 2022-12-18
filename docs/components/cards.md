@@ -1,4 +1,3 @@
-
 # Cards
 
 Cards are small boxes with titles and content areas.

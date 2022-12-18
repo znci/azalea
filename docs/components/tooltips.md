@@ -1,4 +1,3 @@
-
 # Tooltips
 
 Tooltips show additional text when hovered often used to provide context or info.

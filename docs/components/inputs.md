@@ -1,4 +1,3 @@
-
 # Inputs
 
 Inputs are an easy way to get custom styled inputs for text.
@@ -12,4 +11,3 @@ Inputs are availible in any color used in azalea, this might be primary, seconda
 ```
 	<input type="text" class="input input-primary text-white">
 ```
-

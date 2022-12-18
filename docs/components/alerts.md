@@ -1,4 +1,3 @@
-
 # Alerts
 
 Alerts are ways to give feedback messages to the user.
