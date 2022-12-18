@@ -1,4 +1,3 @@
-
 # Buttons
 
 Buttons change background color to a slightly brighter version when hovered.

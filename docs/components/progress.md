@@ -1,4 +1,3 @@
-
 # Tooltips
 
 Progress bars are an easy way to get custom bars for types of progress.

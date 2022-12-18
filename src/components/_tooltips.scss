@@ -1,61 +1,61 @@
 .tooltip {
-    position: relative;
-    width: max-content;
+  position: relative;
+  width: max-content;
 }
 
 @keyframes slidein {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .tooltip .ttp-text {
-    animation: slidein 0.3s linear;
-    animation-fill-mode: forwards;
-    position: absolute;
-    font-size: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 100%;
-    margin-left: 15px;
-    width: 250px;
-    padding: 10px;
-    border-radius: 10px;
-    background: $lightbackground;
-    z-index: 100;
-    color: #fff;
-    display: none;
+  animation: slidein 0.3s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 15px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  background: $lightbackground;
+  z-index: 100;
+  color: #fff;
+  display: none;
 }
 
 .tooltip:hover .ttp-text {
-    display: grid;
+  display: grid;
 }
 
 .tooltip:after {
-    content: " ";
-    animation: slidein 0.3s linear;
-    position: absolute;
+  content: " ";
+  animation: slidein 0.3s linear;
+  position: absolute;
 
-    /* position tooltip correctly */
-    left: 100%;
-    margin-left: -5px;
+  /* position tooltip correctly */
+  left: 100%;
+  margin-left: -5px;
 
-    /* vertically center */
-    top: 50%;
-    transform: translateY(-50%);
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%);
 
-    /* the arrow */
-    border: 10px solid $lightbackground;
-    border-color: transparent $lightbackground transparent transparent;
-    z-index: 100;
-    display: none;
+  /* the arrow */
+  border: 10px solid $lightbackground;
+  border-color: transparent $lightbackground transparent transparent;
+  z-index: 100;
+  display: none;
 }
 
 .tooltip:hover .ttp-text,
 .tooltip:hover:after {
-    display: block;
+  display: block;
 }
